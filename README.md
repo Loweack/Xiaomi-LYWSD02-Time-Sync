@@ -10,7 +10,7 @@ This component communicates directly with the device via Bluetooth Low Energy (B
 ## ✨ Features
 
 *   **⚡ Native Async**: Built using Home Assistant's native `bleak` library for reliable Bluetooth communication without blocking the system.
-*   **🛠️ Zero Config YAML**: Fully configurable via the Home Assistant UI (Config Flow).
+*   **🛠️ Zero Config YAML**: Fully configurable via the Home Assistant UI.
 *   **⚙️ Smart Defaults**: Automatically detects your Home Assistant's timezone, or lets you override it per device.
 *   **🌍 Complete Sync**: Synchronizes:
     *   Time Zone (Wall clock offset)
@@ -21,7 +21,7 @@ This component communicates directly with the device via Bluetooth Low Energy (B
 
 ### Option 1: HACS (Recommended)
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=YOUR_GITHUB_USERNAME&repository=YOUR_REPO_NAME&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Loweack&repository=Xiaomi-LYWSD02-Time-Sync&category=integration)
 
 1.  Open **HACS** in Home Assistant.
 2.  Go to the **Integrations** section.
@@ -67,12 +67,12 @@ You can sync time on your devices using the `lywsd02_time_sync.set_time` service
 Synchronizes time every night at 03:00 AM to ensure the clock stays accurate:
 
 ```yaml
-alias: "[TIME] Sync Bedroom Clock"
+alias: "[TIME] Sync Xiaomi Miija LYWSD02"
 description: >-
-  Synchronizes the time on the Xiaomi LYWSD02 in the bedroom every night
+  Synchronizes the time on the Xiaomi Miija LYWSD02 in the bedroom every night
   to correct any drift.
 triggers:
-  - at: "03:00:00"
+  - at: "03:15:00"
     trigger: time
 actions:
   - action: lywsd02_time_sync.set_time
