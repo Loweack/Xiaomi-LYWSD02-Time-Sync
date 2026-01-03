@@ -26,7 +26,7 @@ This component communicates directly with the device via Bluetooth Low Energy (B
 1.  Open **HACS** in Home Assistant.
 2.  Go to the **Integrations** section.
 3.  Click the menu (three dots) in the top right corner and select **Custom repositories**.
-4.  Paste the URL of this GitHub repository ([https://github.com/Loweack/Matter-Time-Sync](https://github.com/Loweack/Xiaomi-LYWSD02-Time-Sync)).
+4.  Paste the URL of this GitHub repository ([https://github.com/Loweack/Xiaomi-LYWSD02-Time-Sync](https://github.com/Loweack/Xiaomi-LYWSD02-Time-Sync)).
 5.  Select **Integration** as the category and click **Add**.
 6.  Click **Download** on the new "LYWSD02 Time Sync" card.
 7.  **Restart Home Assistant**.
