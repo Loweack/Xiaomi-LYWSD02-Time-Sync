@@ -1,0 +1,51 @@
+set_time:
+  name: Set Time
+  description: Synchronizes time and settings on a LYWSD02 device.
+  fields:
+    mac:
+      name: MAC Address
+      description: BLE MAC Address of the LYWSD02 device.
+      example: "A4:C1:38:12:34:56"
+      required: true
+      selector:
+        text:
+    tz_offset:
+      name: Timezone Offset
+      description: "Manually override the timezone offset in hours (e.g., 1 or -5). If omitted, uses the configured global timezone."
+      example: 1
+      required: false
+      selector:
+        number:
+          min: -12
+          max: 14
+          step: 1
+    temp_mode:
+      name: Temperature Unit
+      description: "Override the display unit (C or F). If omitted, uses the configured global default."
+      example: "C"
+      required: false
+      selector:
+        select:
+          options:
+            - "C"
+            - "F"
+    timestamp:
+      name: Timestamp
+      description: "Manually provide a UNIX timestamp. If omitted, uses the current system time adjusted for the timezone."
+      example: 1704286800
+      required: false
+      advanced: true
+      selector:
+        number:
+          mode: box
+    timeout:
+      name: Timeout
+      description: Connection timeout in seconds. Increase this if the device is far away.
+      default: 60
+      example: 60
+      required: false
+      selector:
+        number:
+          min: 5
+          max: 120
+          unit_of_measurement: seconds
