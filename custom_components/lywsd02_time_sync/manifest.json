@@ -1,0 +1,11 @@
+{
+  "domain": "lywsd02_time_sync",
+  "name": "Xiaomi LYWSD02 Time Sync",
+  "documentation": "https://github.com/Loweack/Matter-Time-Sync",
+  "dependencies": ["bluetooth"],
+  "requirements": ["bluetooth_adapters"],
+  "codeowners": ["@Loweack"],
+  "version": "1.0.0",
+  "iot_class": "local_polling",
+  "config_flow": true
+}
