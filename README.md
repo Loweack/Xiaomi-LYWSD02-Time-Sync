@@ -1,6 +1,6 @@
 # Xiaomi Miija LYWSD02 Time Sync for Home Assistant
 
-![Version](https://img.shields.io/badge/version-0.2.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Custom%20Component-orange)
 
 A native Home Assistant custom component to synchronize **Time** and **Timezone** on Xiaomi Miija LYWSD02 BLE Clock/Thermometers.
